@@ -72,11 +72,13 @@ else:
 
                 if pin_valid:
                     saldo -= nominal
-                    print("\n=== STRUK BUKTI TRANSFER ===")
-                    print(f"Pengirim : {username}")
-                    print(f"Penerima : {penerima}")
-                    print(f"Nominal  : Rp{nominal}")
-                    print("============================\n")
+                    print(f"""
+=== STRUK BUKTI TRANSFER ===
+Pengirim : {username}
+Penerima : {penerima}
+Nominal  : Rp{nominal}
+============================
+""")
 
                 lanjut_transfer = input("Apakah pengguna ingin melakukan transfer lagi (y/n)? ").lower()
         else:
